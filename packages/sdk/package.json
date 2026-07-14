@@ -1,0 +1,43 @@
+{
+  "name": "@kitforai/sdk",
+  "version": "0.1.0",
+  "description": "Official TypeScript/JavaScript SDK for the Kit for AI API — convert documents & URLs to clean Markdown or JSON and manage knowledge bases for RAG, LLMs and agents.",
+  "license": "MIT",
+  "homepage": "https://kitforai.com",
+  "repository": { "type": "git", "url": "https://github.com/kitforai/kitforai.git", "directory": "packages/sdk" },
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "files": ["dist", "!dist/**/*.test.*", "README.md"],
+  "sideEffects": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.cjs.json && node scripts/postbuild.mjs",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsc -p tsconfig.json && node --test \"dist/esm/**/*.test.js\"",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "kitforai",
+    "markdown",
+    "pdf",
+    "document-conversion",
+    "rag",
+    "llm",
+    "ai",
+    "mcp",
+    "sdk"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2"
+  }
+}

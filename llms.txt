@@ -1,0 +1,18 @@
+# Kit for AI
+
+> Persistent memory for AI agents: remember/recall over auto-managed knowledge
+> bases, hybrid RAG search with cited chat, and document→Markdown/JSON
+> conversion — over MCP and REST with one API key.
+
+## Setup
+
+- [Agent setup instructions](https://kitforai.com/llm-setup): point your agent here to self-configure
+- MCP endpoint: https://kitforai.com/api/mcp (header `x-api-key: kfa_…`)
+- REST base: https://kitforai.com/api/v1
+
+## Docs
+
+- [Documentation](https://kitforai.com/docs)
+- [API reference](https://kitforai.com/reference)
+- [Blog](https://kitforai.com/blog)
+- [Pricing](https://kitforai.com/#pricing)

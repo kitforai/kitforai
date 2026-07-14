@@ -1,0 +1,11 @@
+{
+  "name": "kitforai",
+  "owner": { "name": "Kit for AI", "url": "https://kitforai.com" },
+  "plugins": [
+    {
+      "name": "kit-for-ai",
+      "source": "./plugins/kit-for-ai",
+      "description": "Persistent memory for AI agents — remember/recall, knowledge-base RAG search, and document conversion via the Kit for AI MCP server."
+    }
+  ]
+}

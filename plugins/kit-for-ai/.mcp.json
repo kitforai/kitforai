@@ -1,0 +1,7 @@
+{
+  "kit-for-ai": {
+    "type": "http",
+    "url": "https://kitforai.com/api/mcp",
+    "headers": { "x-api-key": "${KITFORAI_API_KEY}" }
+  }
+}

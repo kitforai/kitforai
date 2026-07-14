@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  sdk:
+    name: Build & test SDK
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/sdk
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          # 22+: `node --test` glob patterns (the sdk test script) need Node 21+
+          node-version: 22
+      - run: npm install --no-fund --no-audit
+      - run: npm run build
+      - run: npm test

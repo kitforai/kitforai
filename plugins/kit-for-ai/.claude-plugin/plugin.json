@@ -1,0 +1,10 @@
+{
+  "name": "kit-for-ai",
+  "description": "Persistent memory for AI agents: remember/recall, knowledge bases with hybrid RAG search, and document→Markdown/JSON conversion.",
+  "version": "1.0.0",
+  "author": { "name": "Kit for AI", "url": "https://kitforai.com" },
+  "homepage": "https://kitforai.com/llm-setup",
+  "repository": "https://github.com/kitforai/kitforai",
+  "license": "MIT",
+  "keywords": ["mcp", "memory", "rag", "knowledge-base", "agent", "document-conversion"]
+}
