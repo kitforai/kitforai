@@ -35,7 +35,10 @@ const kit = new KitForAI({ apiKey: process.env.KITFORAI_API_KEY! });
 const res = await kit.convertUrl("https://example.com/report.pdf", { outputFormat: "json" });
 ```
 
-See [`examples/sdk-quickstart.ts`](examples/sdk-quickstart.ts).
+See [`examples/sdk-quickstart.ts`](examples/sdk-quickstart.ts) to get started, or
+[`examples/sdk-all-methods.ts`](examples/sdk-all-methods.ts) for a runnable tour of
+**every** SDK method — conversions, batch, files, the full knowledge-base lifecycle
+(search, read, versioned write/append/edit/revert), and API keys.
 
 ## Use the Claude plugin
 
