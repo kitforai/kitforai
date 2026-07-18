@@ -85,7 +85,18 @@ try {
 }
 ```
 
-Rate limits are per-key by plan (Free 10/min · Pro 60/min · Enterprise 300/min).
+## Plans & quotas
+
+Requests are rate-limited per key by plan, and conversions and other actions count against monthly
+quotas — an exhausted quota throws `KitForAIError` with code `QUOTA_EXCEEDED` (HTTP `402`). Chatbots
+(public website widgets) and skills (custom tools & preprompts in chat) are managed in the app, not
+this SDK; their caps are listed for reference.
+
+| Plan | Requests/min | Conversions/mo | Knowledge bases | Web searches/mo | Chatbots | Skills | Bot replies/mo |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Free | 10 | 10 | 1 | 25 | 1 | — | 100 |
+| Pro | 60 | 2,000 | 25 | 2,000 | 10 | 10 | 2,000 |
+| Business | 300 | 20,000 | 1,000 | 20,000 | 50 | 50 | 10,000 |
 
 ## License
 
